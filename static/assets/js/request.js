@@ -51,4 +51,6 @@ function getVisible(error_number){
 
 function clear(){
   document.getElementById("result_sentiment").style.display = "none";
+  document.getElementById("result").style.display = "none";
+
 }
