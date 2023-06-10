@@ -1,0 +1,15 @@
+services:
+  app:
+    container_name: artificial-intelligence-api
+    image: artificial-intelligence-api
+    build:
+      context: .
+      dockerfile: python.Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ".:/ArtificialIntelligenceAPI"
+    environment:
+      - DJANGO_SETTINGS_MODULE=BertAPI.settings
+    tty: true
+    restart: unless-stopped
