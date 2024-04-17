@@ -1,4 +1,3 @@
-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 //github repo key
 docker system prune -a //docker reset
 sudo chown -R stoupe cer-nlp // klasör yazma engeli kaldırma
 export PYTHONPATH="${PYTHONPATH}:/cer-nlp/" //python package bulunamazsa
